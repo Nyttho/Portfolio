@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+    <!-- font awesome  -->
+    <script src="https://kit.fontawesome.com/d220321d0c.js" crossorigin="anonymous"></script>
+    <!-- Javascript  -->
+    <script type="module" src="scripts/script.js" defer></script>
+    <title>Anthony DUMAS Portfolio</title>
+</head>
+
+<body>
+  <div class="app">
+    <!-- skewed header -->
+      <header>
+          <nav>
+          
+              <img src="assets/images/Capture-PhotoRoom.png-PhotoRoom.png" alt="logo" class="logo">
+                <ul>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#competences">Compétences</a></li>
+                    <li><a href="#projets">Projets</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+          
+          </nav>
+         <div class="presentation-container">
+             <div class="presentation">
+                 <h1>Anthony Dumas</h1>
+                 <p>Développeur web front-end</p>
+             </div>
+         </div>
+      </header>
+      <main>
+        <section id="about">
+            <div class="about-text">
+                <h2>À propos</h2>
+               <h3>Bienvenu sur mon portfolio</h3>
+               <br>
+               <p>Je suis Anthony <strong>DUMAS</strong>, Développeur web junior</p>
+
+               <p><span class="age"></span> ans, je suis originaire de Normandie.</p>
+               <p>Passionné d'internet et de l'innovation technologique, j'ai consacré mon temps et mon énergie à suivre le parcours de formation en ligne de Développeur Web proposé par Openclassrooms, avec un objectif clair en tête : devenir un Développeur Front-end accompli.  <br>
+                
+             </p>
+
+            </div>
+            <img src="assets/images/mf-avatar.svg" alt="">
+        </section>
+        <section id="competences">
+
+        </section>
+        <section id="projets">
+
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form action="" class="contact-form" id="contact_form">
+               <div class="contact-group">
+                 <div class="contact-box">
+                     <input type="text" name="user-name" class="contact-input" id="name"autocomplete="off" required>
+                     <label for="name" class="contact-label">Nom</label>
+                 </div>
+                 <div class="contact-box">
+                    <input type="email" name="user-mail" class="contact-input" id="mail" required>
+                    <label for="mail" class="contact-label">Adresse mail</label>
+                </div>
+               
+               <div class="contact-box">
+                <input type="text" name="user-subject" class="contact-input" id="subject" required>
+                <label for="subject" class="contact-label">Objet</label>
+            </div>
+            <div class="contact-box contact-area">
+                <textarea name="user-message" id="message" class="contact-input" required></textarea>
+                <label for="message" class="contact-label">Message</label>
+            </div>
+            <p class="info-mail-use">*Votre email ne sera utilisé que dans le cadre d'une réponse à une demande de prise de contact.</p>
+            <p class="contact-message" id="contact_message"></p>
+            <button type="submit" class="form-submit" disabled><i class="fa-regular fa-paper-plane"></i>Envoyer</button>
+        </div>
+    </form>
+        </section>
+      </main>
+  </div>
+
+  <footer>
+    <p>Anthony DUMAS © | Tous droits réservés</p>
+    <div class="social-links">
+        <a href="https://linkedin.com/in/anthony-dumas-1b347024b" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/Nyttho" target="_blank"><i class="fa-brands fa-github"></i></a>
+    </div>
+  </footer>
+
+  <!----------------------- EmailJS  --------------------------->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+
+</body>
+</html>

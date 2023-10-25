@@ -15,7 +15,7 @@ function getAge(dateString) {
 
 let age = getAge("1990-12-26");
 
-currentAge.textContent = age.toString();
+currentAge.textContent = age.toString() + " ans";
 
 // currentAge.textContent = age.toString();
 

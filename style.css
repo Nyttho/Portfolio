@@ -10,13 +10,16 @@ html{
 
 body{
     font-family: 'Kanit', sans-serif;
-    /* background-color: #161925; */
-    /* color: #fff; */
+  
 }
 
 a{
     text-decoration: none;
     color: #fff;
+}
+
+h2 {
+    font-size: 2.7rem;
 }
 /* ==================NAVIGATION===================== */
 
@@ -79,11 +82,8 @@ nav li:not(:first-of-type){
 
 .presentation-container::before {
     content: "";
-    top: 0;
-    left: 0;
     position: absolute;
-    width: 100%;
-    height: 100%;
+    inset: 0;
     background-color: rgba(0,0,0,0.5);
 }
 
@@ -107,7 +107,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 
 }
 
@@ -138,11 +138,49 @@ background-color: orangered;
     line-height: 2rem;
 }
 
+/* ======================COMPETENCES=========================  */
+
+#competences{
+    background-color: #161925;
+    color: #fff;
+    padding-top: 2rem;
+
+}
+
+#competences h2 {
+    text-align: center;
+}
+
+
+.logos-slides {
+    padding: 2rem 0 ;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logos-slides div {
+    text-align: center;
+}
+
+.logos-slides i {
+    font-size: 4rem;
+}
+
+.logos-slides p{
+    font-size: 2rem;
+}
+
+
 /* ============================ CONTACT =========================== */
 #contact {
     background-color: #161925;
     color: #fff;
 
+}
+
+#contact h2 {
+    margin-bottom: 1.5rem;
+    
 }
 form{
     width: 100%;

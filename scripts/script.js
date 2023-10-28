@@ -39,6 +39,22 @@ contactForm.addEventListener("input", () => {
   }
 });
 
+//==================== rotation icones =================
+function spin(e) {
+  const icon = e.target;
+  icon.classList.add("animated");
+
+  setTimeout(() => {
+    icon.classList.remove("animated");
+  }, 2000);
+}
+
+const TechIcons = document.querySelectorAll(".logos-slides i");
+
+TechIcons.forEach((icon) => {
+  icon.addEventListener("mouseover", spin);
+});
+
 // =============EMAIL JS=====================
 
 const sendMail = (e) => {

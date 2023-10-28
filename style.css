@@ -21,6 +21,20 @@ a{
 h2 {
     font-size: 2.7rem;
 }
+.underline {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.underline::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 65px;
+    height: 10px;
+    width: 80px;
+    background-color: orangered;
+    }
 /* ==================NAVIGATION===================== */
 
 nav {
@@ -53,7 +67,6 @@ ul {
 }
 li{
     list-style: none;
-    cursor: pointer;
 }
 
 nav a:hover {
@@ -106,36 +119,32 @@ h1 {
 #about {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    margin-bottom: 2rem;
-
+    justify-content: space-between;
+    margin: 5rem auto;
+    margin-top: 0;
+    width: 85%;
 }
 
-.about-text h2 {
-position: relative;
-margin-bottom: 2rem;
-font-size: 2.7rem;
+#about img {
+    margin-right: 100px;
 }
+
 
 .about-text h3 {
     font-size: 1.8rem;
 }
 
-.about-text h2::before {
-content: "";
-display: block;
-position: absolute;
-bottom: -25px;
-height: 10px;
-width: 80px;
-background-color: orangered;
-}
+
 
 .about-text {
     width: 40%;
-    margin-right: 50px;
     text-align: left;
+    font-size: 1.3rem;
+}
+
+.about-text p {
     line-height: 2rem;
+
 }
 
 /* ======================COMPETENCES=========================  */
@@ -162,14 +171,102 @@ background-color: orangered;
     text-align: center;
 }
 
-.logos-slides i {
-    font-size: 4rem;
-}
-
 .logos-slides p{
     font-size: 2rem;
 }
+.logos-slides i {
+    font-size: 4rem;
+    transform: rotateY(0deg);
+}
 
+.logos-slides i.animated {
+    animation: spin 2s forwards; 
+}
+
+@keyframes spin {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+
+/* =====================PROJETS ================================= */
+#projets {
+    margin: 2rem auto;
+    width: 85%;
+}
+
+
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project {
+    position: relative;
+    height: 300px;
+    aspect-ratio: 1/1;
+    border: 2px solid #161925;
+
+}
+
+#projets img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+
+
+.project-overlay {
+    position: absolute;
+    inset: 0;
+    margin: 0.5rem;
+    background-color: #161925;
+    color: #fff;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-size: 1.5rem;
+    opacity: 0;
+    transition: opacity 0.6s;
+}
+.project-overlay:hover{
+    opacity: 0.9;
+}
+
+.project-icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.info-bulle {
+    position: relative;
+    cursor: pointer;
+}
+
+.info-bulle:hover::after, .info-bulle:focus::after {
+    content: attr(aria-label);
+    font-size: 1rem;
+    position: absolute;
+    bottom: -2em;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    white-space: nowrap;
+    
+}
 
 /* ============================ CONTACT =========================== */
 #contact {
@@ -300,4 +397,7 @@ footer {
     width: 10%;
 }
 
+.social-links i:hover{
+    color: orangered;
+}
 

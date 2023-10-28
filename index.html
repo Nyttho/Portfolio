@@ -22,7 +22,9 @@
       <header>
 
           <nav>
-              <img src="assets/images/Capture-PhotoRoom.png-PhotoRoom.png" alt="logo" class="logo">
+              <a href="#hero">
+                <img src="assets/images/Capture-PhotoRoom.png-PhotoRoom.png" alt="logo" class="logo">
+              </a>
                 <ul>
                     <li><a href="#about">À propos</a></li>
                     <li><a href="#competences">Compétences</a></li>
@@ -31,7 +33,7 @@
                 </ul>
           
           </nav>
-         <div class="presentation-container">
+         <div class="presentation-container" id="hero">
              <div class="presentation">
                  <h1>Anthony Dumas</h1>
                  <p>Développeur web front-end</p>
@@ -45,11 +47,11 @@
         <section id="about">
 
             <div class="about-text">
-                <h2>À propos</h2>
+                <h2 class="underline">À propos</h2>
                <h3>Bienvenu sur mon portfolio</h3>
                <br>
-               <p>Je suis Anthony <strong>DUMAS</strong>, Développeur web junior</p>
-               <p><span class="age"></span> je suis originaire de Normandie.</p>
+               <p>Je suis Anthony <strong>DUMAS</strong>, Développeur web junior,
+               <span class="age"></span> je suis originaire de Normandie.</p>
                <p>Passionné d'internet et de l'innovation technologique, j'ai consacré mon temps et mon énergie à suivre le parcours de formation en ligne de Développeur Web proposé par Openclassrooms, avec un objectif clair en tête : devenir un Développeur Front-end accompli.  <br>
              </p>
             </div>
@@ -86,9 +88,59 @@
         </section>
         
         <section id="projets">
-            <h2>Projets</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati quibusdam aperiam animi repellendus temporibus corporis iste sit tenetur dolorum rerum. Molestias suscipit beatae animi facilis ipsam est quam dolore in possimus quibusdam. Temporibus fugit nemo, facilis inventore magnam labore porro iure fugiat nesciunt neque natus, blanditiis enim quia eius ducimus dolores numquam quisquam eligendi? Ab aut repellat optio quia maxime quibusdam quos error dolorum repudiandae, culpa quod expedita accusantium quam. Similique accusamus consectetur inventore? Quam aperiam illo maiores, reprehenderit nostrum repudiandae tempore pariatur hic deleniti minima labore expedita beatae optio harum vero velit dolores odio ipsam. Nisi a quia accusamus?</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati quibusdam aperiam animi repellendus temporibus corporis iste sit tenetur dolorum rerum. Molestias suscipit beatae animi facilis ipsam est quam dolore in possimus quibusdam. Temporibus fugit nemo, facilis inventore magnam labore porro iure fugiat nesciunt neque natus, blanditiis enim quia eius ducimus dolores numquam quisquam eligendi? Ab aut repellat optio quia maxime quibusdam quos error dolorum repudiandae, culpa quod expedita accusantium quam. Similique accusamus consectetur inventore? Quam aperiam illo maiores, reprehenderit nostrum repudiandae tempore pariatur hic deleniti minima labore expedita beatae optio harum vero velit dolores odio ipsam. Nisi a quia accusamus?</p>
+            <h2 class="underline">Projets</h2>
+            <div class="projects-container">
+                <div class="project">
+                    <img src="assets/images/projects/Booki.JPG" alt="projet Booki">
+                    <div class="project-overlay">
+                         <h4>Booki</h4>
+                         <div class="project-icons">
+                               <span class="info-bulle" aria-label="En savoir plus"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                               <span class="info-bulle" aria-label="Code du projet"><a href="https://github.com/Nyttho/OC_Projet-2_Agence-de-voyage" target="_blank"><i class="fa-solid fa-code"></i></a></span>
+                         </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="assets/images/projects/sophie_bluel_1.JPG" alt="projet Booki">
+                    <div class="project-overlay">
+                         <h4>Portfolio d'architecte</h4>
+                         <div class="project-icons">
+                            <span class="info-bulle" aria-label="En savoir plus"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                            <span class="info-bulle" aria-label="Code du projet"><a href="https://github.com/Nyttho/OC_Projet-3_Portfolio-Architecte" target="_blank"><i class="fa-solid fa-code"></i></a></span>
+                         </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="assets/images/projects/nina_carducci_1.JPG" alt="projet Booki">
+                    <div class="project-overlay">
+                         <h4>Portfolio de photographe</h4>
+                         <div class="project-icons">
+                            <span class="info-bulle" aria-label="En savoir plus"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                            <span class="info-bulle" aria-label="Code du projet"><a href="https://github.com/Nyttho/OC_projet-5_debugguer_optimiser_site_photographe" target="_blank"><i class="fa-solid fa-code"></i></a></span>
+                         </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="assets/images/projects/Kasa.JPG" alt="projet Booki">
+                    <div class="project-overlay">
+                         <h4>Kasa</h4>
+                         <div class="project-icons">
+                            <span class="info-bulle" aria-label="En savoir plus"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                            <span class="info-bulle" aria-label="Code du projet"><a href="https://github.com/Nyttho/OC_Projet-6_Kasa" target="_blank"><i class="fa-solid fa-code"></i></a></span>
+                         </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="assets/images/projects/grimoire_1.JPG" alt="projet Booki">
+                    <div class="project-overlay">
+                         <h4>Vieux grimoire</h4>
+                         <div class="project-icons">
+                            <span class="info-bulle" aria-label="En savoir plus"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                            <span class="info-bulle" aria-label="Code du projet"><a href="https://github.com/Nyttho/OC_projet-7_vieux-grimoire" target="_blank"><i class="fa-solid fa-code"></i></a></span>
+                         </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="contact">
             <h2>Contact</h2>

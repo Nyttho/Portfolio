@@ -17,8 +17,6 @@ let age = getAge("1990-12-26");
 
 currentAge.textContent = age.toString() + " ans";
 
-// currentAge.textContent = age.toString();
-
 const contactForm = document.querySelector(".contact-form"),
   contactMessage = document.getElementById("contact_message"),
   submitButton = document.querySelector(".form-submit");
@@ -43,9 +41,11 @@ contactForm.addEventListener("input", () => {
 function spin(e) {
   const icon = e.target;
   icon.classList.add("animated");
+  icon.removeEventListener("mouseover", spin);
 
   setTimeout(() => {
     icon.classList.remove("animated");
+    icon.addEventListener("mouseover", spin);
   }, 2000);
 }
 
@@ -80,3 +80,20 @@ const sendMail = (e) => {
 };
 
 contactForm.addEventListener("submit", sendMail);
+
+//================== COLLAPSE ===================
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}

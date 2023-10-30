@@ -129,7 +129,25 @@ h1 {
 }
 
 #about img {
+    width: 260px;
+}
+
+.avatars {
     margin-right: 100px;
+    width: fit-content;
+    
+}
+
+.avatars:hover .neutral_avatar {
+    display: none;
+}
+
+.avatars:hover .grimace_avatar {
+    display: inline;
+}
+
+.grimace_avatar {
+    display: none;
 }
 
 
@@ -149,6 +167,8 @@ h1 {
     line-height: 2rem;
 
 }
+
+
 
 /* ======================COMPETENCES=========================  */
 
@@ -175,10 +195,11 @@ h1 {
 }
 
 .logos-slides p{
-    font-size: 2rem;
+    font-size: max(1.2vw, 14px);
 }
+
 .logos-slides i {
-    font-size: 4rem;
+    font-size: max(5vw, 40px);
     transform: rotateY(0deg);
 }
 
@@ -213,12 +234,13 @@ h1 {
 
 .project {
     position: relative;
-    height: 400px;
+    width: 40vw;
     aspect-ratio: 1.8/1;
-    border: 2px solid #161925;
+    /* border: 2px solid #161925; */
     box-shadow: 5px 5px 10px #161925;
     border-radius: 10px;
     overflow: hidden;
+    padding: 1rem;
 
 }
 
@@ -232,30 +254,30 @@ h1 {
 .project-overlay {
     position: absolute;
     inset: 0;
-    margin: 0.2rem;
+    margin: 0.5rem;
+    border-radius: 10px;
     background-color: #161925;
     color: #fff;
-    border-radius: 10px;
     z-index: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 30px;
-    font-size: 1.5rem;
+    font-size: max(1.2vw, 14px);
     opacity: 0;
     transition: opacity 0.6s;
+
+    
 }
 
 .project-overlay h4, .project-overlay h5 {
     user-select: none;
-    font-weight: 300;
 }
 
 .project-overlay p {
-    font-size: 1rem;
     margin: 0 2rem;
     text-align: left;
+    font-weight: 300;
 }
 
 .tags {
@@ -264,11 +286,10 @@ h1 {
 }
 
 .tag {
-    font-size: 1rem;
     margin-left: 1rem;
     background-color: orangered;
     min-width: 70px;
-    padding: 0.4rem;
+    padding: max(0.4vw, 0.2rem);
     border-radius: 6px;
     opacity: 1;
     text-align: center;
@@ -287,11 +308,11 @@ h1 {
 
 .info-bulle:hover::after, .info-bulle:focus::after {
     content: attr(aria-label);
-    font-size: 1rem;
+    font-size: 1.2vw;
     position: absolute;
-    top: -1.5em;
-    left: 50%;
-    transform: translateX(-50%);
+    /* top: -1.5em; */
+    left: 100%;
+    transform: translateX(5%);
     z-index: 1;
     white-space: nowrap;
     
@@ -408,6 +429,8 @@ input[data-autocompleted] {
 }
 
 .info-mail-use {
+    text-align: center;
+    width: 90%;
     font-size: 0.8rem;
     font-weight: 100;
 }
@@ -429,11 +452,29 @@ footer {
     font-size: 2rem;
     display: flex;
     justify-content: space-around;
-    width: 10%;
+    width: 100px;
 }
 
 .social-links i:hover{
     color: orangered;
 }
 
+@media (max-width: 965px) {
+    .project{
+        height: 300px; 
+        width: auto;
 
+    }
+    #about{
+        flex-direction: column;
+    }
+
+    .avatars {
+        margin: 0;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+
+}

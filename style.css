@@ -48,7 +48,10 @@ nav {
     z-index: 999;
     width: 100%;
     background-color: #161925;
+    font-size: calc(0.5rem + 1vw);
 }
+
+
 
 .logo {
     width: 40px;
@@ -72,6 +75,10 @@ li{
     list-style: none;
 }
 
+nav a {
+    white-space: nowrap;
+}
+
 nav a:hover {
 color: orangered;
 }
@@ -81,6 +88,68 @@ nav li:not(:first-of-type){
     padding-left: 20px;
     margin-left: 20px;
 }
+
+/*======================BURGER MENU ======================= */
+
+.plate .line {
+    stroke: #fff;
+}
+
+.plate {
+    height: 80px;
+    width: 80px;
+    display: none;
+  }
+  
+  .x {
+    transform: scale(0);
+    transition: transform 400ms;
+  }
+  .line {
+    fill: none;
+    stroke: black;
+    stroke-width: 6px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transform-origin: 50%;
+    transition: stroke-dasharray 500ms 200ms, stroke-dashoffset 500ms 200ms, transform 500ms 200ms;
+  }
+  .x .line {
+    stroke-width: 5.5px;
+  }
+  
+  .plate4 .x {
+    transition: transform 400ms;
+  }
+  .plate4 .line {
+    transform-origin: 50%;
+    transition: transform 400ms 100ms;
+  }
+  .active.plate4 .line {
+    transition: transform 400ms;
+  }
+  .active.plate4 .line1 {
+    transform: translateX(18px) translateY(-3px) rotate(-45deg) scale(.7);
+  }
+  .active.plate4 .line2 {
+    transform: translateX(-18px) translateY(-3px) rotate(45deg) scale(.7);
+  }
+  .active.plate4 .line3 {
+    transform: translateY(0px) rotate(45deg) scale(.7);
+  }
+  .active.plate4 .line4 {
+    transform: translateY(0px) rotate(-45deg) scale(.7);
+  }
+  .active.plate4 .line5 {
+    transform: translateX(18px) translateY(3px) rotate(45deg) scale(.7);
+  }
+  .active.plate4 .line6 {
+    transform: translateX(-18px) translateY(3px) rotate(-45deg) scale(.7);
+  }
+  .active.plate4 .x {
+    transition: transform 400ms 100ms;
+    transform: scale(1);
+  }
 /* ======================HERO====================== */
 
 .presentation-container {
@@ -477,4 +546,41 @@ footer {
         width: 100%;
     }
 
+}
+
+@media (max-width: 575px){
+nav ul {
+    position: fixed;
+    padding: 0;
+    left: -100%;
+    top: 8%;
+    background-color: #161925;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    transition: 0.25s;
+    height: fit-content;
+}
+
+nav li:not(:first-of-type) {
+    border-left: none;
+    margin: 0;
+    padding-left: 0;
+    
+    
+}
+nav li {
+    width: 100%;
+    padding: 0.6rem 0;
+    margin: 0;
+}
+
+nav li:hover {
+    background-color: #3a3c44;
+}
+.plate{
+    display: flex;
+    align-items: center;
+}
 }

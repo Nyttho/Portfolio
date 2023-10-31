@@ -1,5 +1,17 @@
 import { serviceID, templateID, publicKey } from "./config.js";
 
+// burger menu
+const burger = document.querySelector(".plate");
+const menu = document.querySelector("nav ul");
+burger.addEventListener("click", () => {
+  burger.classList.toggle("active");
+  if (burger.classList.contains("active")) {
+    menu.style.left = "0";
+  } else {
+    menu.style.left = "-100%";
+  }
+});
+
 const currentAge = document.querySelector(".age");
 
 function getAge(dateString) {

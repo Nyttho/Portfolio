@@ -91,10 +91,6 @@ nav li:not(:first-of-type){
 
 /*======================BURGER MENU ======================= */
 
-.plate .line {
-    stroke: #fff;
-}
-
 .plate {
     height: 80px;
     width: 80px;
@@ -104,7 +100,7 @@ nav li:not(:first-of-type){
   
   .line {
     fill: none;
-    stroke: black;
+    stroke: #fff;
     stroke-width: 6px;
     stroke-linecap: round;
     stroke-linejoin: round;

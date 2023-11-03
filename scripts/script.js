@@ -1,6 +1,7 @@
 import { serviceID, templateID, publicKey } from "./config.js";
 
-// burger menu
+// ==============BURGER MENU =================
+
 const burger = document.querySelector(".plate");
 const menu = document.querySelector("nav ul");
 burger.addEventListener("click", () => {
@@ -11,6 +12,8 @@ burger.addEventListener("click", () => {
     menu.style.left = "-100%";
   }
 });
+
+// ============== MAJ AGE ======================
 
 const currentAge = document.querySelector(".age");
 
@@ -28,6 +31,8 @@ function getAge(dateString) {
 let age = getAge("1990-12-26");
 
 currentAge.textContent = age.toString() + " ans";
+
+// ============ DISABLE BUTTON SUBMIT ==================
 
 const contactForm = document.querySelector(".contact-form"),
   contactMessage = document.getElementById("contact_message"),
@@ -49,7 +54,8 @@ contactForm.addEventListener("input", () => {
   }
 });
 
-//==================== rotation icones =================
+//==================== ROTATION ICONES =================
+
 function spin(e) {
   const icon = e.target;
   icon.classList.add("animated");

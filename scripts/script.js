@@ -1,4 +1,6 @@
-import { serviceID, templateID, publicKey } from "./config.js";
+const serviceID = "service_zaubtgf";
+const templateID = "template_1wh6wuh";
+const publicKey = "uSXlPDgWhWkOG8M-g";
 
 // ==============BURGER MENU =================
 

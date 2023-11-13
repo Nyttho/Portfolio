@@ -92,6 +92,7 @@ const sendMail = (e) => {
 
       //   vide les champs
       contactForm.reset();
+      submitButton.setAttribute("disabled", "disabled");
     },
     () => {
       contactMessage.textContent = "Message non envoyé (service error) ❌";

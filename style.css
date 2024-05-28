@@ -228,10 +228,27 @@ h1 {
   text-align: center;
 }
 
+.logos-container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  padding: 0 150px;
+  gap: 200px;
+}
+
 .logos-slides {
   padding: 2rem 0;
   display: flex;
   justify-content: space-around;
+  flex-grow: 1;
+  gap: 200px;
+  animation: move-left 8s linear infinite;
+}
+
+@keyframes move-left {
+  to {
+    transform: translateX(-117%);
+  }
 }
 
 .logos-slides div {
@@ -239,11 +256,11 @@ h1 {
 }
 
 .logos-slides p {
-  font-size: calc(0.8rem + 0.5vw);
+  font-size: 1rem;
 }
 
 .logos-slides i {
-  font-size: max(5vw, 40px);
+  font-size: 5rem;
   transform: rotateY(0deg);
 }
 
@@ -260,7 +277,7 @@ h1 {
   }
 }
 
-/* =====================PROJETS ================================= */
+/* ===================== PROJETS ================================= */
 #projets {
   margin: 2rem auto;
   width: 85%;

@@ -32,7 +32,7 @@ function getAge(dateString) {
 
 let age = getAge("1990-12-26");
 
-currentAge.textContent = age.toString() + " ans";
+currentAge.textContent = "de " + age.toString() + " ans,";
 
 // ============ DISABLE BUTTON SUBMIT ==================
 

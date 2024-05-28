@@ -286,16 +286,6 @@ h1 {
   margin-left: 3.5rem;
 }
 
-/* .projects-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
-  background-color: #ededed;
-  border-radius: 30px;
-  padding: 1rem;
-} */
-
 .projects-container {
   display: grid;
   justify-items: center;

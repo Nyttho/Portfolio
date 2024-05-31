@@ -38,5 +38,45 @@
         "learning": ["Connexion à une BDD", "Création d'une API"],
         "link": "https://github.com/Nyttho/OC_projet-7_vieux-grimoire",
         "illustration": "assets/images/projects/grimoire_1_resized.webp"
+    },
+    {
+        "name": "Sons of Misery",
+        "description": "lorem.",
+        "technologies": ["Html", "Css", "Javascript"],
+        "learning": ["Connexion à une BDD", "Création d'une API"],
+        "link": "https://github.com/Nyttho/sons_of_misery_prototype",
+        "illustration": "assets/images/projects/sons_of_misery_website.JPG"
+    },
+    {
+        "name": "Motus",
+        "description": "Lorem",
+        "technologies": ["Html", "Css", "Javascript"],
+        "learning": ["Connexion à une BDD", "Création d'une API"],
+        "link": "https://github.com/Nyttho/motus_clone",
+        "illustration": "assets/images/projects/motus.JPG"
+    },
+    {
+        "name": "Guitar fretboard learning",
+        "description": "Lorem",
+        "technologies": ["Html", "Css", "Javascript"],
+        "learning": ["Connexion à une BDD", "Création d'une API"],
+        "link": "https://github.com/Nyttho/Personnal_project_guitar_fretboard_learning",
+        "illustration": "assets/images/projects/fretboard.JPG"
+    },
+    {
+        "name": "Simon",
+        "description": "Lorem",
+        "technologies": ["Html", "Css", "Javascript"],
+        "learning": ["Connexion à une BDD", "Création d'une API"],
+        "link": "https://github.com/Nyttho/Simon-game",
+        "illustration": "assets/images/projects/Simon.JPG"
+    },
+    {
+        "name": "Memory game",
+        "description": "Lorem",
+        "technologies": ["Html", "Css", "Javascript"],
+        "learning": ["Connexion à une BDD", "Création d'une API"],
+        "link": "https://github.com/Nyttho/Personnal_project_memory_game",
+        "illustration": "assets/images/projects/memory.JPG"
     }
 ]

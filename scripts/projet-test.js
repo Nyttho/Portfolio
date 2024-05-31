@@ -7,7 +7,7 @@ export async function fetchProjects(path) {
 function displayProject(projectDatas) {
     const { name, description, technologies, learning, link, illustration } = projectDatas;
 
-    const section = document.querySelector(".projects-container-test");
+    const section = document.querySelector(".projects-container");
     const project = createElementWithClasses("div", ["project-test"]);
     const titleContainer = createElementWithClasses("div", ["title-container-test"]);
     const title = createElementWithClasses("h3", ["title-test"], name);

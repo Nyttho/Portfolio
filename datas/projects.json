@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Booki",
+        "description": "Projet de la formation développeur web d'Openclassrooms, la mission consistait à intégrer la page d'accueil du site de la société Booki.",
+        "technologies": ["Html", "Css"],
+        "learning": ["Intégration d'une maquette", "Sans framework"],
+        "link": "https://github.com/Nyttho/OC_Projet-2_Agence-de-voyage",
+        "illustration": "assets/images/projects/Booki_resized.webp"
+    },
+    {
+        "name": "Portfolio d'architecte",
+        "description": "Projet de la formation développeur web d'Openclassrooms, la mission consistait à dynamiser un site et d'utiliser une API afin de s'authentifier et gérer les projets.",
+        "technologies": ["Html", "Css", "Javascript"],
+        "learning": ["Connexion utilisateur", "Requêtes Api", "Sans framework"],
+        "link": "https://github.com/Nyttho/OC_Projet-3_Portfolio-Architecte",
+        "illustration": "assets/images/projects/sophie_bluel_1_resized.webp"
+    },
+    {
+        "name": "Portfolio de photographe",
+        "description": "Projet de la formation développeur web d'Openclassrooms, la mission consistait à optimiser et debugger un site, améliorer l'accéssibilité et le référencement naturel (SEO).",
+        "technologies": ["Html", "Css", "Javascript"],
+        "learning": ["Optimisation des ressources", "Optimisation du code", "Optimisation SEO"],
+        "link": "https://github.com/Nyttho/OC_projet-5_debugguer_optimiser_site_photographe",
+        "illustration": "assets/images/projects/nina_carducci_1_resized.webp"
+    },
+    {
+        "name": "Kasa",
+        "description": "Projet de la formation développeur web d'Openclassrooms, la mission consistait à créer l'application d'un site de location d'hebergements en single page application(SPA).",
+        "technologies": ["React", "Sass"],
+        "learning": ["Utilisation des props", "Utilisation des hooks", "Organisation de l'architecture du code"],
+        "link": "https://github.com/Nyttho/OC_Projet-6_Kasa",
+        "illustration": "assets/images/projects/Kasa_resized.webp"
+    },
+    {
+        "name": "Mon vieux Grimoire",
+        "description": "Projet de la formation développeur web d'Openclassrooms, la mission consistait à réaliser le backend d'un site de notation de livre en créant les routes API et en gérant la base de données.",
+        "technologies": ["Node Js", "Express Js"],
+        "learning": ["Connexion à une BDD", "Création d'une API"],
+        "link": "https://github.com/Nyttho/OC_projet-7_vieux-grimoire",
+        "illustration": "assets/images/projects/grimoire_1_resized.webp"
+    }
+]

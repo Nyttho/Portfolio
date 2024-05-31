@@ -1,6 +1,10 @@
+import { fetchProjects } from "./projet-test.js";
 const serviceID = "service_zaubtgf";
 const templateID = "template_1wh6wuh";
 const publicKey = "uSXlPDgWhWkOG8M-g";
+
+// =================test=====================
+fetchProjects("./datas/projects.json")
 
 // ==============BURGER MENU =================
 

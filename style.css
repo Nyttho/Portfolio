@@ -1,7 +1,16 @@
-* {
+*,
+::before,
+::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+:root {
+  --primary: #161925;
+  --secondary: #ededed;
+  --orange: orangered;
+  --white: #fff;
 }
 
 html {
@@ -17,7 +26,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: var(--white);
 }
 
 h2 {
@@ -35,7 +44,7 @@ h2 {
   top: 65px;
   height: 10px;
   width: 80px;
-  background-color: orangered;
+  background-color: var(--orange);
 }
 /* ==================NAVIGATION===================== */
 
@@ -46,7 +55,7 @@ nav {
   position: fixed;
   z-index: 999;
   width: 100%;
-  background-color: #161925;
+  background-color: var(--primary);
   font-size: calc(0.8rem + 0.5vw);
 }
 
@@ -76,11 +85,11 @@ nav a {
 }
 
 nav a:hover {
-  color: orangered;
+  color: var(--orange);
 }
 
 nav li:not(:first-of-type) {
-  border-left: 2px solid #fff;
+  border-left: 2px solid var(--white);
   padding-left: 20px;
   margin-left: 20px;
 }
@@ -96,7 +105,7 @@ nav li:not(:first-of-type) {
 
 .line {
   fill: none;
-  stroke: #fff;
+  stroke: var(--white);
   stroke-width: 6px;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -145,7 +154,7 @@ nav li:not(:first-of-type) {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: var(--white);
   clip-path: polygon(0 0, 0 80%, 100% 100%, 100% 0);
 }
 
@@ -219,8 +228,8 @@ h1 {
 /* ======================COMPETENCES=========================  */
 
 #competences {
-  background-color: #161925;
-  color: #fff;
+  background-color: var(--primary);
+  color: var(--white);
   padding-top: 2rem;
 }
 
@@ -291,7 +300,7 @@ h1 {
   justify-items: center;
   grid-template-columns: repeat(auto-fill, minmax(425px, 1fr));
   gap: 20px;
-  background-color: #ededed;
+  background-color: var(--secondary);
   border-radius: 30px;
   padding: 20px;
 }
@@ -305,7 +314,7 @@ h1 {
   /* min-height: 400px; */
   border-radius: 15px;
   /* overflow: hidden; */
-  background-color: #fff;
+  background-color: var(--white);
   overflow: hidden;
 }
 
@@ -320,7 +329,7 @@ h1 {
   position: absolute;
   inset: 0;
   background-color: #161925;
-  color: #fff;
+  color: var(--white);
   z-index: 1;
   display: flex;
   flex-direction: column;
@@ -354,7 +363,7 @@ h1 {
 
 .tag {
   margin-top: 1rem;
-  background-color: orangered;
+  background-color: var(--orange);
   min-width: calc(30px + 2vw);
   padding: 0.2rem;
   border-radius: 6px;
@@ -387,7 +396,7 @@ h1 {
   height: 4rem;
   width: 50%;
   height: 100%;
-  border-right: 1px solid #fff;
+  border-right: 1px solid var(--white);
 }
 
 .developped-comp {
@@ -397,10 +406,102 @@ h1 {
   align-items: center;
 }
 
+/* ==============PROJETS TEST ======================== */
+.projects-container-test {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(425px, 1fr));
+
+  gap: 20px;
+  background-color: var(--secondary);
+  border-radius: 30px;
+  padding: 20px;
+  margin: 1rem 2rem;
+}
+.project-test {
+  width: 100%;
+}
+
+.img-container-test {
+  display: flex;
+  border-radius: 15px 15px 0 0;
+  overflow: hidden;
+  height: 250px;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+h3 {
+  text-align: center;
+}
+.arrow {
+  position: relative;
+  cursor: pointer;
+  top: 1.5px;
+}
+
+.collapsible {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transition: grid-template-rows 1s ease, opacity 1s ease;
+}
+
+.content-test {
+  overflow: hidden;
+  background: var(--white);
+  padding: 0 1rem;
+  border-radius: 0 0 15px 15px;
+}
+
+.content-test .tag {
+  color: var(--white);
+  padding: 0.2rem 0.5rem;
+}
+
+.content-test ul {
+  display: flex;
+  justify-content: center;
+}
+
+.content-test .content-p-test {
+  margin: 1rem 0;
+}
+
+.content-test a {
+  display: block;
+  margin: 1rem auto;
+  text-align: center;
+  width: fit-content;
+}
+
+.title-container-test {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 0.5rem;
+}
+
+.collapsible.opened {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+
+#projets-test a {
+  color: #000;
+  text-decoration: underline;
+}
+
 /* ============================ CONTACT =========================== */
 #contact {
   background-color: #161925;
-  color: #fff;
+  color: var(--white);
 }
 
 #contact h2 {
@@ -488,8 +589,8 @@ input[data-autocompleted] {
   padding: 2rem;
   margin-bottom: 2rem;
   width: 50%;
-  background-color: orangered;
-  color: #fff;
+  background-color: var(--orange);
+  color: var(--white);
   border: none;
   border-radius: 10px;
   font-size: 1.5rem;
@@ -516,7 +617,7 @@ footer {
   height: 100px;
   font-size: 1.2rem;
   background-color: #161925;
-  color: #fff;
+  color: var(--white);
 }
 
 footer {
@@ -532,7 +633,7 @@ footer {
 }
 
 .social-links i:hover {
-  color: orangered;
+  color: var(--orange);
 }
 
 @media (max-width: 1240px) {

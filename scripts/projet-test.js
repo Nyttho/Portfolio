@@ -16,6 +16,7 @@ function displayProject(projectDatas) {
     arrow.addEventListener("click", () => {
         const collapsible = project.querySelector(".collapsible");
         if (collapsible) collapsible.classList.toggle("opened");
+        arrow.classList.toggle("active");
     });
 
     const imgContainer = createElementWithClasses("div", ["img-container-test"]);

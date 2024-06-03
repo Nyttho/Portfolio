@@ -41,41 +41,41 @@
     },
     {
         "name": "Sons of Misery",
-        "description": "lorem.",
+        "description": "J'ai conçu et développé le prototype d'un site vitrine moderne et dynamique pour un groupe de musique local. L'objectif principal était de fournir une plateforme en ligne qui reflète l'identité unique du groupe et facilite l'engagement avec leur public.",
         "technologies": ["Html", "Css", "Javascript"],
-        "learning": ["Connexion à une BDD", "Création d'une API"],
+        "learning": ["Conception UI/UX", "Communication", "Présentation"],
         "link": "https://github.com/Nyttho/sons_of_misery_prototype",
         "illustration": "assets/images/projects/sons_of_misery_website.JPG"
     },
     {
         "name": "Motus",
-        "description": "Lorem",
+        "description": "Développement d'un jeu de Motus interactif en JavaScript, inspiré du célèbre jeu télévisé. L'objectif du jeu est de deviner un mot caché en un nombre limité de tentatives, en recevant des indices après chaque essai.",
         "technologies": ["Html", "Css", "Javascript"],
-        "learning": ["Connexion à une BDD", "Création d'une API"],
+        "learning": ["Algorithmes de Vérification", "Utilisation du local Storage"],
         "link": "https://github.com/Nyttho/motus_clone",
         "illustration": "assets/images/projects/motus.JPG"
     },
     {
         "name": "Guitar fretboard learning",
-        "description": "Lorem",
+        "description": "Développement d'un outil interactif en JavaScript pour aider les guitaristes à apprendre les notes sur le manche de leur guitare. Cet outil vise à rendre l'apprentissage des notes plus intuitif et amusant.",
         "technologies": ["Html", "Css", "Javascript"],
-        "learning": ["Connexion à une BDD", "Création d'une API"],
+        "learning": ["Algorithmes de génération de notes et de vérification des réponses"],
         "link": "https://github.com/Nyttho/Personnal_project_guitar_fretboard_learning",
         "illustration": "assets/images/projects/fretboard.JPG"
     },
     {
         "name": "Simon",
-        "description": "Lorem",
+        "description": "Développement d'un jeu de Simon interactif en JavaScript. L'objectif du jeu est de reproduire une séquence de couleurs de plus en plus longue générée par l'ordinateur, en testant la mémoire des joueurs.",
         "technologies": ["Html", "Css", "Javascript"],
-        "learning": ["Connexion à une BDD", "Création d'une API"],
+        "learning": ["Algorithmes de Séquence", "Animations et Effets Sonores"],
         "link": "https://github.com/Nyttho/Simon-game",
         "illustration": "assets/images/projects/Simon.JPG"
     },
     {
         "name": "Memory game",
-        "description": "Lorem",
+        "description": "Développement d'un jeu de mémoire interactif en JavaScript pour améliorer les compétences en programmation et offrir une expérience ludique aux utilisateurs. Le jeu consiste à retourner des cartes et à trouver des paires correspondantes le plus rapidement possible.",
         "technologies": ["Html", "Css", "Javascript"],
-        "learning": ["Connexion à une BDD", "Création d'une API"],
+        "learning": ["Développement JavaScript"],
         "link": "https://github.com/Nyttho/Personnal_project_memory_game",
         "illustration": "assets/images/projects/memory.JPG"
     }

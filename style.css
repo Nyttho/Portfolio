@@ -349,7 +349,14 @@ h3 {
 .arrow {
   position: relative;
   cursor: pointer;
-  top: 1.5px;
+  top: 1px;
+  transform: rotate(0deg);
+  font-size: 2rem;
+  transition: transform 0.5s ease;
+}
+
+.arrow.active {
+  transform: rotate(-180deg);
 }
 
 .collapsible {
@@ -400,7 +407,8 @@ h3 {
 
 .title-container-test {
   display: flex;
-  gap: 10px;
+  gap: 15px;
+  font-size: 1.5rem;
   justify-content: center;
   align-items: center;
   background-color: var(--primary);

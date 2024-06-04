@@ -408,7 +408,7 @@ h3 {
 .title-container-test {
   display: flex;
   gap: 15px;
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 2vw, 1.5rem);
   justify-content: center;
   align-items: center;
   background-color: var(--primary);

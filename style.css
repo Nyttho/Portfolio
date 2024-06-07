@@ -331,6 +331,10 @@ h1 {
   width: 100%;
 }
 
+.project-test h3 {
+  text-align: center;
+}
+
 .img-container-test {
   display: flex;
   border-radius: 15px 15px 0 0;
@@ -343,9 +347,7 @@ img {
   width: 100%;
   object-fit: cover;
 }
-h3 {
-  text-align: center;
-}
+
 .arrow {
   position: relative;
   cursor: pointer;
